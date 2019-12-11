@@ -106,7 +106,7 @@ def get_orb_value(img1, img2):
             # print value
             # return value
     except:
-        print "-1"
+        print("-1")
         os.remove("./tmp.jpg")
         # return -1
 
@@ -177,15 +177,15 @@ if __name__ == "__main__":
                 # if value < 53.795:
                 if value <= vvvv:
                     result = "是, 判定为同一个人"
-                    print result
+                    print(result)
                 else:
                     result = "否,判定为不同的人"
                     cv2.imwrite(img_path, frame_160_gray)
-                    print "@%s@已经替换图像**********************************************************************************************************" % str(value)
+                    print("@%s@已经替换图像**********************************************************************************************************" % str(value))
                     # print "@%s@" % str(value)
                 # print "value== %s \t 小于52.245？< %s >" % (str(value), result)
                 # print "value== %s \t 小于54.201？< %s >" % (str(value), result)
-                print "value== %s \t 小于%s？< %s >" % (str(value),str(vvvv), result)
+                print("value== %s \t 小于%s？< %s >" % (str(value),str(vvvv), result))
 
                 # if value <= 36:
                 #     print value

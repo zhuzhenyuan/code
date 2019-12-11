@@ -87,7 +87,7 @@ def get_orb_value(img1, img2):
         # return "匹配个数：" + str(len(matches))
         return pp
     except:
-        print "-1"
+        print("-1")
         return -1
 
 
@@ -114,7 +114,7 @@ def get_result(src_img_path, dst_path):
             else:
                 result = "否,判定为不同的人"
                 count_no += 1
-            print "value== %s \t 小于52.245？< %s >" % ( str(value), result)
+            print("value== %s \t 小于52.245？< %s >" % ( str(value), result))
             # print "%s-->%s-->value== %s \t 小于52.245？< %s >" % (src_img_path, dst_path+dst_img, str(value), result)
         except:
             continue
@@ -129,7 +129,7 @@ if __name__ == "__main__":
     # name_list = ["a", "b", "c", "d", "e", "f", "g"]
     # name_list = ["h", "i"]
     # name_list = ["i"]
-    name_list = [x for x in xrange(1, 65)]
+    name_list = [x for x in range(1, 65)]
     # name_list = [33]
     for name in name_list:
         # query_image = "./test_data/%s.jpg" % name
@@ -144,4 +144,4 @@ if __name__ == "__main__":
         count_is += a
         count_no += b
 
-    print "result --> is: %d   no: %d" % (count_is, count_no)
+    print("result --> is: %d   no: %d" % (count_is, count_no))

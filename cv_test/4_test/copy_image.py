@@ -24,11 +24,11 @@ def copy_image():
             file_dir2 = dist_dir + img
             shutil.copy(file_dir1, file_dir2)
             if os.path.isfile(file_dir2):
-                print "Success__" + str(count)
+                print("Success__" + str(count))
                 count += 1
-    print "********************"
-    print "all is： " + str(count) + "_-zhang"
-    print "********************"
+    print("********************")
+    print("all is： " + str(count) + "_-zhang")
+    print("********************")
 
 
 if __name__ == "__main__":
