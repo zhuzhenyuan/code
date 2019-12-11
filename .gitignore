@@ -1,0 +1,10 @@
+.idea
+.vscode
+_build
+test
+
+
+*.pyc
+*.out
+*.javac
+*vimrc
