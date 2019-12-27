@@ -38,8 +38,8 @@ async def prxoy(sock, address):
     #     buf = await asyncio.wait_for(loop.sock_recv(current_conn, BUFFER_SIZE), timeout=3)
     except Exception:
         current_conn.close()
-        raise
-
+        # raise
+        return  # 不报错
     print("there is 222222end")
     buf = bytearray(buf)
     if len(buf) < 7:
@@ -96,7 +96,8 @@ async def forward(cs, DspAddr, DspPort):
     except Exception:
         cs.close()
         ss.close()
-        raise
+        # raise
+        return  # 不报错
 
     local_remote = asyncio.ensure_future(local2remote(cs, ss))
     remote_local = asyncio.ensure_future(remote2local(cs, ss))
